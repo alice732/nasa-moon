@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#page1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    background-image: url(https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001167/GSFC_20171208_Archive_e001167~orig.jpg?w=1061&h=597&fit=clip&crop=faces%2Cfocalpoint);
+    background-position: center;
+    background-size: cover;
+    z-index: 9999;
+    animation-name: up;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+}
+.bg-video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+    }
+@keyframes up{
+    from{
+      
+        top: 0%;
+     
+    }
+    to{
+        top: -100%;
+       
+    }
+}
+img{
+    height: 24%;
+    width: 14%;
+    margin-top: 17%;
+    margin-left: 45%;
+    animation-name: opacity;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+}
+@keyframes opacity{
+    from{
+        opacity: 100%;
+    }
+    to{
+        opacity: 0%;
+    }
+}
+#page2{
+    height: 100%;
+    width: 100%;
+   background-color:white;
+    position: absolute;
+    top: 0%;
+    animation-name: city;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 7s;
+    z-index: 9;
+}
+.bg-video{
+height: 100%;
+width: 100%;
+position: absolute;
+top: 0;
+bottom: 0;
+z-index: -1;
+object-fit: cover;
+}
+@keyframes city{
+    from{
+       top: 0%;
+    }
+    to{
+        top: -170%;
+    }
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+   ;
+}
+.back-video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+ nav{
+   height: 60px;
+   width: 100%;
+   background-color:transparent;
+   display: flex;
+   z-index: 999;
+}
+#left{
+    height: 68px;
+    width: 82px;
+    background-image: url(https://www.nasa.gov/wp-content/plugins/nasa-hds-core-setup/assets/favicons/apple-touch-icon-114x114.png);
+    background-position: center;
+    background-size: cover;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+
+h4{
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: white;
+    margin-top: 2%;
+    margin-left: 85%;
+    position: absolute;
+}
+#i{
+    height: 30px;
+    width: 66px;
+    background-color: transparent;
+    margin-top: 2%;
+    margin-left: 80%;
+}
+i{
+    padding: 3px;
+    font-size: 20px;
+    color: white;
+}
+#video{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    top: 0%;
+}
+#video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+h1{
+    font-size: 32px;
+    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    margin-top: 7.5%;
+    margin-left: 8%;
+    animation-name: h;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 7.5s;
+    animation-timing-function: linear;
+    position: absolute;
+    animation-fill-mode: backwards;
+}
+@keyframes h{
+    from{
+        top: -50%;
+    }
+    to{
+        top: 7.5%;
+    }
+}
+
+h2{
+    font-size: 53px;
+    font-family: system-ui,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: white;
+    margin-top: 10%;
+    margin-left: 8%;
+    word-spacing: 10px;
+    position: absolute;
+    animation-name: hh;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 7.5s;
+    animation-timing-function: linear;
+    position: absolute;
+    animation-fill-mode: backwards;
+}
+@keyframes hh{
+    from{
+        top: -60%;
+    }
+    to{
+        top: 0%;
+    }
+}
+
+
+#a{
+    color: rgb(170, 4, 4);
+    font-style: italic;
+
+}
+#b{
+    color: rgb(255, 255, 255);
+    font-style: italic;
+}
+h3{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    margin-top: 11%;
+   position: absolute;
+    margin-left: 6%;
+    animation-name: hhh;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 7.5s;
+    animation-timing-function: linear;
+    position: absolute;
+    animation-fill-mode: backwards;
+}
+@keyframes hhh{
+    from{
+        top: -80%;
+    }
+    to{
+        top: 0%;
+    }
+}
+
+
+#p{
+    height: 64px;
+    width: 36%;
+    margin-left: 7%;
+    margin-top: 29%;
+   word-break: keep-all;
+   text-align: left;
+   position: absolute;
+   animation-name: p;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-delay: 7.5s;
+   animation-timing-function: linear;
+   position: absolute;
+   animation-fill-mode: backwards;
+}
+@keyframes p{
+   from{
+       top: -80%;
+   }
+   to{
+       top: 0%;
+   }
+}
+
+
+p{
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 100;
+}
+button{
+    height: 36px;
+    width: 9%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.425);
+    border: 1px solid transparent;
+    color: black;
+    margin-left: 49.7%;
+   margin-top: 29%;
+   border-radius: 6px;
+   font-size: 12px;
+   animation-name: b;
+   animation-duration: 2s;
+   animation-iteration-count: 1;
+   animation-delay: 7.5s;
+   animation-timing-function: linear;
+   position: absolute;
+   animation-fill-mode: backwards;
+}
+@keyframes b{
+   from{
+       top: -80%;
+   }
+   to{
+       top: 0%;
+   }
+}
+
+
+button:hover{
+   cursor: pointer;
+   height: 39px;
+   width: 10% ;
+}
